@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules - CraftMiner</title>
+    <meta name="description" content="CraftMiner Global Rules - Guidelines for maintaining a safe and enjoyable gaming environment">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <!-- SVG Gradients -->
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;">
+        <defs>
+            <linearGradient id="discordGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#E6A57E;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#8B4513;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <!-- Header (OttersMP Style) -->
+    <header class="otters-header">
+        <div class="header-background">
+            <img src="../images/header-background-new.avif" alt="Header Background" class="header-bg-image">
+            <div class="header-overlay"></div>
+        </div>
+        
+        <!-- Header Content -->
+        <div class="header-container">
+            <!-- Left: Server Address -->
+            <div class="header-left">
+                <a href="#" class="server-address-link" onclick="copyServerIP()">
+                    <div class="server-address-section">
+                        <div class="server-address-icon">
+                            <i data-lucide="play"></i>
+                            <span class="player-count">89</span>
+                        </div>
+                        <div class="server-address-text">
+                            <div class="server-ip-text">PLAY.CRAFTMINER.COM</div>
+                            <div class="server-action-text">Click to copy</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Center: Logo -->
+            <div class="header-center">
+                <img src="../images/craftminer-logo-transparent.png" alt="CraftMiner" class="main-logo-img">
+            </div>
+            
+            <!-- Right: Discord -->
+            <div class="header-right">
+                <a href="https://discord.gg/craftminer" target="_blank" class="discord-link">
+                    <div class="discord-section">
+                        <div class="discord-text">
+                            <div class="discord-title">DISCORD SERVER</div>
+                            <div class="discord-action">CLICK TO JOIN</div>
+                        </div>
+                        <div class="discord-icon">
+                            <i data-lucide="message-circle"></i>
+                            <span class="member-count">26.124</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation (OttersMP Style) - Below Hero -->
+    <nav class="navbar-otters">
+        <div class="navbar-container">
+            <!-- Left Side: Navigation Links -->
+            <div class="navbar-links-left">
+                <a href="../index.html" class="navbar-link">
+                    <i data-lucide="home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="staff.html" class="navbar-link">
+                    <i data-lucide="users"></i>
+                    <span>Staff</span>
+                </a>
+                <a href="rules.html" class="navbar-link active">
+                    <i data-lucide="book"></i>
+                    <span>Rules</span>
+                </a>
+            </div>
+            
+            <!-- Right Side: Download Button -->
+            <div class="navbar-actions">
+                <button class="download-btn" onclick="window.open('https://craftminersmp.com/CraftMinerLauncher.rar', '_blank')">
+                    <i data-lucide="download"></i>
+                    <span>Download</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content rules-page-content">
+        <div class="container">
+            <div class="rules-header">
+                <div class="rules-icon">
+                    <img src="../images/craftminer-rules-logo.png" alt="CraftMiner Rules" class="rules-logo">
+                </div>
+                <h1 class="rules-title">CraftMiner Global Rules</h1>
+                <p class="rules-subtitle">
+                    To ensure that everyone has a toxic-free, safe and enjoyable environment these rules are here. 
+                    If you have any questions please open up a ticket in Discord and we'll be happy to clarify and give you more information!
+                </p>
+            </div>
+
+            <div class="rules-container">
+                <div class="rules-list">
+                    
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 1. Chat Ads - Spam - Different Language</h3>
+                        <p class="rule-description">
+                            Advertisements that are repeatedly sent multiple times over 4-5 minutes, excessive spam, and languages other than English in public chat are not allowed. Advertisements of the same items or location or service fall under the same rule. Similar services would not fall under this rule.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 2. No Filter Bypass // Vulgar Language</h3>
+                        <p class="rule-description">
+                            Players are not allowed to bypass chat filters to say blacklisted words which include: slurs, gambling/casinos, and vulgar language.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 3. No Sharing Unofficial Links</h3>
+                        <p class="rule-description">
+                            Unless this is an official CraftMiner link or a commonly known website it is not allowed to keep the safety of our players.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 4. Mentioning CraftMiner Competitors</h3>
+                        <p class="rule-description">
+                            No mentioning or advertising CraftMiner competitors. We do not want to create drama between other servers.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 5. No "Hot Topic" Discussions</h3>
+                        <p class="rule-description">
+                            No political discussions referring to governments, elections, or controversial social issues. Our server is accessible to every single person around the world and most conversations will end up at each others throats.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 6. No Inappropriate Behavior</h3>
+                        <p class="rule-description">
+                            We do not allow NSFW, 18+ Topics/Jokes, Nudity, Sexual Behavior, Heavy Profanity and suggestive/boderline "risky" conversations are also not allowed
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 7. No Harassment</h3>
+                        <p class="rule-description">
+                            When someone intentionally harms or mistreats another person, often with emotional, or verbal means, aiming to assert power or dominance over them.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 8. No Disrespectful Behavior</h3>
+                        <p class="rule-description">
+                            Do not be impolite, disrespectful or inconsiderate. We suggest /ignore if you do not get along with another player.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 9. No Creating/Feeding Drama</h3>
+                        <p class="rule-description">
+                            Do not purposefully try to disturb the peace by causing drama in chat. Deliberately posting provocative, misleading, or disruptive messages in the chat with the intention of inciting reactions or chaos rather than contributing constructively to the conversation is not allowed.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 10. No Rioting</h3>
+                        <p class="rule-description">
+                            Do not involve multiple users flooding the chat with repeated, often harmful, or disruptive statements, targeting something or someone. It would also extend to the CraftMiner server itself. If you are displeased with the server
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 11. No Threats</h3>
+                        <p class="rule-description">
+                            Do not wish ill will or threaten players with real life harm. Excessive suggestive content with "(in Minecraft)" or "in-game" at the end would fall under this rule. Malicious threats will be taken more seriously.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 12. No Advertisements</h3>
+                        <p class="rule-description">
+                            Do not advertise competitors or projects for personal gain. This would extend to private servers, private Discords, or personal commissions. If you are unsure about this rule. Ask a staff member with a link! Popular Minecraft servers/games are exempt from this rule
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 13. No Discrimination & Racism</h3>
+                        <p class="rule-description">
+                            Any kind of communication in speech, writing or behavior, that attacks or uses pejorative or discriminatory language with reference to a person or a group on the basis of who they are, in other words, based on their religion, ethnicity, nationality, race, color, descent, gender or other identity factors are NOT allowed
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 14. Obstruction of Evidence</h3>
+                        <p class="rule-description">
+                            Do not hide evidence from staff, whether it be before, during, or after an investigation. It will hurt the community and any questions asked are for the benefit of CraftMiner.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 15. Store Deals (IRL Trading)</h3>
+                        <p class="rule-description">
+                            You are not allowed to sell anything in-game for real life monetary value. Offering/Requesting is also not allowed. Players are [ALLOWED] to request for & buy items that have already been purchased on the store. I.e "Buying 1x XXX Bundle for $XXX,XXX"
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 16. DDoS/Doxxing</h3>
+                        <p class="rule-description">
+                            Do not reveal engage in requesting or redistributing highly personal information of player(s) that is not public knowledge on the CraftMiner server. IPv4 Addresses, IRL Locations, Player Names, and Sensitive IRL information are all considered blacklisted topics.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 17. No Harmful/Illegal Links</h3>
+                        <p class="rule-description">
+                            Do not send harmful or suspicious websites. This may include the pop ads on some websites. Any website that hosts or promotes illegal activities may not be sent this can include: pirating, dark web, or drug-related websites.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 18. No Sexual Harassment/Behavior</h3>
+                        <p class="rule-description">
+                            Do not engage in unwelcome and inappropriate behavior of a sexual nature. This can manifest through explicit language, comments, or actions that create discomfort for others in the community.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 19. No Gameplay Trolling</h3>
+                        <p class="rule-description">
+                            Do not intentionally disrupt or disturb a player to annoy, frustrate, or provoke them. This may involve engaging in behaviors that disrupt the normal flow of the game, interfere with other players' progress, or create a negative experience.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 20. No Inappropriate Gameplay</h3>
+                        <p class="rule-description">
+                            Do not engage in actions or behaviors that are considered offensive, disruptive or heavily sexual. This can include activities such as creating offensive builds and items, inappropriate builds and items, and engaging sexual acts.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 21. No Punishment Evasion</h3>
+                        <p class="rule-description">
+                            Do not bypass punishments. Using signs to communicate with other players by placing signs, using the discord -> MC chat or renaming items. Using alt accounts to chat/evade your ban is also not allowed. Using other player(s) who are not punished to circumvent your punishment will escalate your punishment as well.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 22. No Alt Gameplay</h3>
+                        <p class="rule-description">
+                            Do not use your alt accounts other than for these purposes: chatting, building, earning key alls, afking farms. Any other form of alt gameplay such as; stalls, rankup, milestones, voting, dungeons, voting, dailies, rewards, events, competitions, and most gameplay functions are strictly prohibited.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 23. No Trapping</h3>
+                        <p class="rule-description">
+                            Setting up places or mechanisms with the intention of capturing or harming other players. This can include creating traps, enclosed spaces or other contraptions designed to catch players. TP Killing is also luring players with false statements to get them to accept a teleport request and kill them.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 24. No Excessive Harassment.</h3>
+                        <p class="rule-description">
+                            Do not intentionally keep bothering or be hostile to a specific person / group over a long period. Sending threats, spreading lies, using offensive language, or constantly trying to mess with the targeted person is not allowed.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 25. No Scamming</h3>
+                        <p class="rule-description">
+                            Always hold up the end of your deal. Refusal to hold up your deal MAY see the initial deal go through or fully reversed. Deals for money should always go through /ah. Loans & IOUs are AT YOUR OWN RISK. Deals should look similar to the example below:
+                        </p>
+                        <div class="rule-example">
+                            <p>- Player A buys/trades for 1x Jazmine Plushy to Player B for $XXX,XXX/1x Meed Plushy</p>
+                            <p>- All deals are final however if a mutual agreement is agreed upon it may be reversed or if staff deem the transaction necessary to be reversed.</p>
+                        </div>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 26. No Malicious Deals</h3>
+                        <p class="rule-description">
+                            No pyramid schemes, "doubling" schemes, false bidding, loan sharking, and unrealistic deals. Misinformation is counted as malicious and may result in a punishment that is dependent on staff.
+                            While IOUs, loans, and future dated payments are allowed, we recommend you NOT DO them. Staff may step in to issue a refund and complicate the process. Loan at your own risk.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 27. No Griefing</h3>
+                        <p class="rule-description">
+                            Trying to obstruct, destroy, defile, or any other harmful action towards another player's builds. No killing claim mobs/pets that are non-natural spawns.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 28. No Hurting the Server</h3>
+                        <p class="rule-description">
+                            Do not lag the server with malicious Minecraft mechanics/plugin/server techniques.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 29. No Inappropriate Personal Content</h3>
+                        <p class="rule-description">
+                            Do not have an inappropriate username, cape (3rd party), Minecraft skin, cosmetic (3rd party), Discord Username, Discord Status, Discord Server Bio, or Discord Server Profile Picture.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 30. No Betrayal/Insiding/Stealing</h3>
+                        <p class="rule-description">
+                            Do not steal/take from other players (chests, armor stands, item frames). If an area is not claimed, please notify staff via in-game chat or a ticket.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 31. No Incomplete Deals</h3>
+                        <p class="rule-description">
+                            When two or more parties agree to one working for payment from the other(s) and end up not fulfilling the agreed upon deal. It could be anything from placing blocks, commissioning a build, or finishing a job.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 32. No Harming The Server</h3>
+                        <p class="rule-description">
+                            Do not harm the server by adding bot accounts, messaging players online in masses or using bots to complete tasks. No creating incredibly lag inducing machines or stacking large amount of entities together.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 33. No Exploitation</h3>
+                        <p class="rule-description">
+                            No abusing exploits or unintentional features/bugs for an unfair advantage. Spreading exploits or unintentional features will count as promoting explotation which will result in a punishment.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 34. No Illegal Modifications</h3>
+                        <p class="rule-description">
+                            No modifications that will give you an edge over players. Cheating is strictly prohibited. An illegal modification could consist of; rebinding keys (i.e swing for faster CPS), illegal clicking methods (drag clicking), modified client, more than 1 action hot key, illegal clients, modified hardware, or modified software.
+                            <br><br>
+                            <em>(Rebinding can be allowed for accessibility purposes make a ticket in the ticket link above.)</em>
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 35. No Exploiting Rule Loopholes</h3>
+                        <p class="rule-description">
+                            Do not exploit rule loopholes. Technicalities will still be counted under the general rule.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 36. No Public Displays of Romance</h3>
+                        <p class="rule-description">
+                            Do not show romantic or public displays of romance on the CraftMiner public chat(s). Do not look for partner(s) on either our Discord or Minecraft server. You may do this through DMs or private messages. Including, but not limited to, kissing, flirting, romantic nicknames i.e "babe", and romantic implications.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 37. Two Minecraft Accounts Only</h3>
+                        <p class="rule-description">
+                            You may only have up to two Minecraft accounts per IP/player. The platform does not matter. If you have multiple family/friends in your residence. Please open up a ticket to be verified.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 38. No Breaking EULA/TOS</h3>
+                        <p class="rule-description">
+                            Please follow Discord & Minecraft's EULA when posting content to the respected platform.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 39. No Self Advertisements</h3>
+                        <p class="rule-description">
+                            Live stream links must be verified by CraftMiner staff to be posted publicly or privately.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 40. No Claim Squatting</h3>
+                        <p class="rule-description">
+                            Do not claim too close to player (50-100 blocks), and do not request for a claim to be unclaimed unless you are building in that area or you have explicit permission from the owner of the claim.
+                        </p>
+                    </div>
+
+                    <div class="rule-item">
+                        <h3 class="rule-title">▪ 41. No Pre-Order Sales</h3>
+                        <p class="rule-description">
+                            You are not allowed to sell items before they are in your inventory. You are also not allowed to buy items before they are in the sellers inventory.
+                        </p>
+                    </div>
+
+                    <div class="rule-item rule-override">
+                        <h3 class="rule-title">▪ 100. Rule Override</h3>
+                        <p class="rule-description">
+                            All rules in this channel override any other current rule set in any platform or channel. Previous statements by staff made prior to 1/1/2025 are overriden by this rule set as well. Special pardons/changes/modifications may also be modified by management under extreme circumstances.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (OtterSMP Style) -->
+    <footer class="footer-otter">
+        <div class="footer-top">
+            <div class="footer-container">
+                <!-- Brand Section -->
+                <div class="footer-brand">
+                    <div class="footer-avatar">
+                        <img src="../images/footer-logo.avif" alt="CraftMiner" class="brand-avatar">
+                    </div>
+                    <p class="footer-description">
+                        CraftMiner is a Minecraft server that enhances gameplay with new features. Join now if you love Minecraft!
+                    </p>
+                </div>
+                
+                <!-- Links Section -->
+                <div class="footer-links">
+                    <h4 class="footer-links-title">Other Links</h4>
+                    <div class="footer-links-list">
+                        <a href="staff.html" class="footer-link">Staff</a>
+                        <a href="rules.html" class="footer-link">Rules</a>
+                    </div>
+                </div>
+                
+                <!-- Support Section -->
+                <div class="footer-support">
+                    <h4 class="footer-support-title">Support our server</h4>
+                    <p class="footer-support-text">
+                        Support us in delivering higher quality content and gameplay enhancements to the network by purchasing ranks, crate keys, and other packages from our server store. Your contribution makes a difference!
+                    </p>
+                    <a href="https://discord.gg/craftminer" class="footer-store-btn" target="_blank">
+                        <i data-lucide="message-circle"></i>
+                        Join Discord Server
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom-bar">
+            <div class="footer-container">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 CraftMiner. All rights reserved</p>
+                    <p>We are not affiliated with Minecraft or Mojang AB.</p>
+                </div>
+                <div class="footer-social-icons">
+                    <a href="https://discord.gg/craftminer" class="discord-footer-logo" target="_blank">
+                        <img src="../images/discord-logo-final.png" alt="Discord" class="discord-footer-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../scripts/main.js"></script>
+    
+    <script>
+        // Initialize rules page specific functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Lucide icons
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
+    </script>
+</body>
+</html>

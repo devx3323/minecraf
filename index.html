@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraftMiner - Premium Minecraft Skyblock Experience</title>
+    <meta name="description" content="Join CraftMiner server! Premium Minecraft skyblock experience, special events and amazing community awaits you.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- SVG Gradients -->
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;">
+        <defs>
+            <linearGradient id="discordGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#E6A57E;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#8B4513;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <!-- Header (OttersMP Style) -->
+    <header class="otters-header">
+        <div class="header-background">
+            <img src="images/header-background-new.avif" alt="Header Background" class="header-bg-image">
+            <div class="header-overlay"></div>
+        </div>
+        
+        <!-- Header Content -->
+        <div class="header-container">
+            <!-- Left: Server Address -->
+            <div class="header-left">
+                <a href="#" class="server-address-link" onclick="copyServerIP()">
+                    <div class="server-address-section">
+                        <div class="server-address-icon">
+                            <i data-lucide="play"></i>
+                            <span class="player-count">89</span>
+                        </div>
+                        <div class="server-address-text">
+                            <div class="server-ip-text">PLAY.CRAFTMINER.COM</div>
+                            <div class="server-action-text">Click to copy</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Center: Logo -->
+            <div class="header-center">
+                <img src="images/craftminer-logo-transparent.png" alt="CraftMiner" class="main-logo-img">
+            </div>
+            
+            <!-- Right: Discord -->
+            <div class="header-right">
+                <a href="https://discord.gg/craftminer" target="_blank" class="discord-link">
+                    <div class="discord-section">
+                        <div class="discord-text">
+                            <div class="discord-title">DISCORD SERVER</div>
+                            <div class="discord-action">CLICK TO JOIN</div>
+                        </div>
+                        <div class="discord-icon">
+                            <i data-lucide="message-circle"></i>
+                            <span class="member-count">26.124</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation (OttersMP Style) - Below Hero -->
+    <nav class="navbar-otters">
+        <div class="navbar-container">
+            <!-- Left Side: Navigation Links -->
+            <div class="navbar-links-left">
+                <a href="#home" class="navbar-link active">
+                    <i data-lucide="home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="pages/staff.html" class="navbar-link">
+                    <i data-lucide="users"></i>
+                    <span>Staff</span>
+                </a>
+                <a href="pages/rules.html" class="navbar-link">
+                    <i data-lucide="book"></i>
+                    <span>Rules</span>
+                </a>
+            </div>
+            
+            <!-- Right Side: Download Button -->
+            <div class="navbar-actions">
+                <button class="download-btn" onclick="window.open('https://craftminersmp.com/CraftMinerLauncher.rar', '_blank')">
+                    <i data-lucide="download-cloud"></i>
+                    <span>Get CraftMiner</span>
+                </button>
+            </div>
+            
+
+        </div>
+        
+
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Latest News Section - OttersMP Style -->
+        <section class="news-section-otters">
+            <div class="container">
+                <!-- Featured News Card -->
+                <article class="featured-news-card">
+                    <div class="featured-news-image">
+                        <img src="images/news-advent-calendar.png" alt="CRAFTMINER WEEKLY" loading="lazy">
+                        <span class="news-tag">News</span>
+                    </div>
+                    
+                    <div class="featured-news-content">
+                        <h2 class="featured-news-title">CRAFTMINER WEEKLY</h2>
+                        <div class="featured-news-meta">
+                        </div>
+                        <p class="featured-news-excerpt">
+                            It's December and that means Merry Mayhem is on its way sooner than you think! Community spotlight, server updates, and exciting new features await. 12/3/2025 - CraftMiner Team
+                        </p>
+                        <div class="featured-news-footer">
+                            <button class="read-more-btn-small">Read More</button>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- News Grid - 8 more articles -->
+                <div class="news-grid-otters">
+                    <article class="news-card-otters">
+                        <div class="news-thumbnail-otters">
+                            <img src="images/news-bundles.png" alt="CraftMiner Weekly - Yeni Bundle'lar ve Güncellemeler" loading="lazy" decoding="async">
+                            <span class="news-tag-otters">Update</span>
+                        </div>
+                        <div class="news-content-otters">
+                            <h3 class="news-title-otters">CRAFTMINER WEEKLY</h3>
+                            <div class="news-meta-otters">
+                            </div>
+                            <p class="news-excerpt-otters">
+                                We're back with CraftMiner Weekly! I finally found some time again! We're gonna definitely go through what we've been doing! 10/18/2025 - Klew
+                            </p>
+                            <button class="read-more-btn-small">Read More</button>
+                        </div>
+                    </article>
+
+                    <article class="news-card-otters">
+                        <div class="news-thumbnail-otters">
+                            <img src="images/news-forsaken-myths.png" alt="Forsaken Myths - Kayıp Krallık Macerası" loading="lazy" decoding="async">
+                            <span class="news-tag-otters">Release</span>
+                        </div>
+                        <div class="news-content-otters">
+                            <h3 class="news-title-otters">FORSAKEN MYTHS RELEASED!!!</h3>
+                            <div class="news-meta-otters">
+
+    
+                            </div>
+                            <p class="news-excerpt-otters">
+                                Ezra asks for you to travel with him to the lost Kingdom of Thorne and find out what truly happened on that fateful night when the Kingdom fell into ruins, lost to time. 2025 - CraftMiner Team
+                            </p>
+                            <button class="read-more-btn-small">Read More</button>
+                        </div>
+                    </article>
+
+                    <article class="news-card-otters">
+                        <div class="news-thumbnail-otters">
+                            <img src="images/news-haunted-hallows.png" alt="Haunted Hallows - Korku Dolu Sonbahar Etkinliği" loading="lazy" decoding="async">
+                            <span class="news-tag-otters">Weekly</span>
+                        </div>
+                        <div class="news-content-otters">
+                            <h3 class="news-title-otters">CRAFTMINER WEEKLY</h3>
+                            <div class="news-meta-otters">
+
+    
+                            </div>
+                            <p class="news-excerpt-otters">
+                                We're back with CraftMiner Weekly! I finally found some time in between my work. 10/28/2025 - Latashi
+                            </p>
+                            <button class="read-more-btn-small">Read More</button>
+                        </div>
+                    </article>
+
+                    <article class="news-card-otters">
+                        <div class="news-thumbnail-otters">
+                            <img src="images/news-update-1.png" alt="Server Update" loading="lazy">
+                            <span class="news-tag-otters">Update</span>
+                        </div>
+                        <div class="news-content-otters">
+                            <h3 class="news-title-otters">POST RELEASE — HAUNTED HALLOWS</h3>
+                            <div class="news-meta-otters">
+
+    
+                            </div>
+                            <p class="news-excerpt-otters">
+                                The curses have begun, and the things that go bump in the night are no longer afraid to show their hideous faces... 2025 - Latashi
+                            </p>
+                            <button class="read-more-btn-small">Read More</button>
+                        </div>
+                    </article>
+
+                    <article class="news-card-otters">
+                        <div class="news-thumbnail-otters">
+                            <img src="images/news-update-2.png" alt="Server Update" loading="lazy">
+                            <span class="news-tag-otters">Update</span>
+                        </div>
+                        <div class="news-content-otters">
+                            <h3 class="news-title-otters">HAUNTED HALLOWS RELEASE</h3>
+                            <div class="news-meta-otters">
+
+    
+                            </div>
+                            <p class="news-excerpt-otters">
+                                The Pumpking and Eclipse return for the first time in a year — when the veil between the living and the cursed grows thin. 2025 - CraftMiner Team
+                            </p>
+                            <button class="read-more-btn-small">Read More</button>
+                        </div>
+                    </article>
+
+                    <article class="news-card-otters">
+                        <div class="news-thumbnail-otters">
+                            <img src="images/news-security.png" alt="Security" loading="lazy">
+                            <span class="news-tag-otters">Update</span>
+                        </div>
+                        <div class="news-content-otters">
+                            <h3 class="news-title-otters">CRAFTMINER WEEKLY</h3>
+                            <div class="news-meta-otters">
+
+    
+                            </div>
+                            <p class="news-excerpt-otters">
+                                The mid season update has released and we're super excited to talk about what has happened! 9/19/2025 - Klew
+                            </p>
+                            <button class="read-more-btn-small">Read More</button>
+                        </div>
+                    </article>
+
+                    <article class="news-card-otters">
+                        <div class="news-thumbnail-otters">
+                            <img src="images/news-sugar-spree.avif" alt="Sugar Spree" loading="lazy">
+                            <span class="news-tag-otters">Event</span>
+                        </div>
+                        <div class="news-content-otters">
+                            <h3 class="news-title-otters">CRAFTMINER WEEKLY</h3>
+                            <div class="news-meta-otters">
+
+    
+                            </div>
+                            <p class="news-excerpt-otters">
+                                Sugar Spree has officially released — let's talk some of the previous statistics and what we have planned! 9/10/2025 - Klew
+                            </p>
+                            <button class="read-more-btn-small">Read More</button>
+                        </div>
+                    </article>
+
+                    <article class="news-card-otters">
+                        <div class="news-thumbnail-otters">
+                            <img src="images/news-update-8.avif" alt="CraftMiner Weekly" loading="lazy">
+                            <span class="news-tag-otters">Event</span>
+                        </div>
+                        <div class="news-content-otters">
+                            <h3 class="news-title-otters">CRAFTMINER WEEKLY</h3>
+                            <div class="news-meta-otters">
+
+    
+                            </div>
+                            <p class="news-excerpt-otters">
+                                The first weekly otter of September! It's now called "CraftMiner Weekly" now! Cool, but lets talk about the Sugar Spree event! 9/2/2025 - Klew
+                            </p>
+                            <button class="read-more-btn-small">Read More</button>
+                        </div>
+                    </article>
+
+                    <article class="news-card-otters">
+                        <div class="news-thumbnail-otters">
+                            <img src="images/news-craftminer-horror.avif" alt="CraftMiner Horror" loading="lazy">
+                            <span class="news-tag-otters">Horror</span>
+                        </div>
+                        <div class="news-content-otters">
+                            <h3 class="news-title-otters">WEEKLY CRAFTMINER NEWS</h3>
+                            <div class="news-meta-otters">
+
+    
+                            </div>
+                            <p class="news-excerpt-otters">
+                                The anniversary day has a big surprise for you ahead of time! Something lurks in the shadows of Celariya... Let's dive onto into the world of Celariya. 8/13/2025 - CraftMiner Team
+                            </p>
+                            <button class="read-more-btn-small">Read More</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- News Modal -->
+    <div class="news-modal" id="newsModal">
+        <div class="news-modal-overlay" onclick="closeNewsModal()"></div>
+        <div class="news-modal-content-wrapper">
+            <div class="news-modal-header">
+                <h2 class="modal-title">News Title</h2>
+                <button class="news-modal-close" onclick="closeNewsModal()">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            
+            <div class="news-modal-meta">
+                <span class="modal-date">Date</span>
+                <span class="modal-read-time">• Read Time</span>
+            </div>
+            
+            <div class="news-modal-image">
+                <img class="modal-image" src="" alt="News Image">
+            </div>
+            
+            <div class="news-modal-body">
+                <div class="modal-content">
+                    <!-- News content will be inserted here -->
+                </div>
+            </div>
+            
+            <div class="news-modal-footer">
+                <div class="modal-author">Created By: <span class="modal-author-name"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (OtterSMP Style) -->
+    <footer class="footer-otter">
+        <div class="footer-top">
+            <div class="footer-container">
+                <!-- Brand Section -->
+                <div class="footer-brand">
+                    <div class="footer-avatar">
+                        <img src="images/footer-logo.avif" alt="CraftMiner" class="brand-avatar">
+                    </div>
+                    <p class="footer-description">
+                        CraftMiner is a Minecraft server that enhances gameplay with new features. Join now if you love Minecraft!
+                    </p>
+                </div>
+                
+                <!-- Links Section -->
+                <div class="footer-links">
+                    <h4 class="footer-links-title">Other Links</h4>
+                    <div class="footer-links-list">
+                        <a href="pages/staff.html" class="footer-link">Staff</a>
+                        <a href="pages/rules.html" class="footer-link">Rules</a>
+                    </div>
+                </div>
+                
+                <!-- Support Section -->
+                <div class="footer-support">
+                    <h4 class="footer-support-title">Support our server</h4>
+                    <p class="footer-support-text">
+                        Support us in delivering higher quality content and gameplay enhancements to the network by purchasing ranks, crate keys, and other packages from our server store. Your contribution makes a difference!
+                    </p>
+                    <a href="https://discord.gg/craftminer" class="footer-store-btn" target="_blank">
+                        <i data-lucide="message-circle"></i>
+                        Join Discord Server
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom-bar">
+            <div class="footer-container">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 CraftMiner. All rights reserved</p>
+                    <p>We are not affiliated with Minecraft or Mojang AB.</p>
+                </div>
+                <div class="footer-social-icons">
+                    <a href="https://discord.gg/craftminer" class="discord-footer-logo" target="_blank">
+                        <img src="images/discord-logo-final.png" alt="Discord" class="discord-footer-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copy Success Toast -->
+    <div class="toast" id="copyToast">
+        <i data-lucide="check"></i>
+        <span>IP Copied!</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>

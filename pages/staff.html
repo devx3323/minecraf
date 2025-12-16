@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff - CraftMiner</title>
+    <meta name="description" content="Meet the CraftMiner staff team and apply to become part of our community!">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <!-- SVG Gradients -->
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;">
+        <defs>
+            <linearGradient id="discordGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#E6A57E;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#8B4513;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <!-- Header (OttersMP Style) -->
+    <header class="otters-header">
+        <div class="header-background">
+            <img src="../images/header-background-new.avif" alt="Header Background" class="header-bg-image">
+            <div class="header-overlay"></div>
+        </div>
+        
+        <!-- Header Content -->
+        <div class="header-container">
+            <!-- Left: Server Address -->
+            <div class="header-left">
+                <a href="#" class="server-address-link" onclick="copyServerIP()">
+                    <div class="server-address-section">
+                        <div class="server-address-icon">
+                            <i data-lucide="play"></i>
+                            <span class="player-count">89</span>
+                        </div>
+                        <div class="server-address-text">
+                            <div class="server-ip-text">PLAY.CRAFTMINER.COM</div>
+                            <div class="server-action-text">Click to copy</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Center: Logo -->
+            <div class="header-center">
+                <img src="../images/craftminer-logo-transparent.png" alt="CraftMiner" class="main-logo-img">
+            </div>
+            
+            <!-- Right: Discord -->
+            <div class="header-right">
+                <a href="https://discord.gg/craftminer" target="_blank" class="discord-link">
+                    <div class="discord-section">
+                        <div class="discord-text">
+                            <div class="discord-title">DISCORD SERVER</div>
+                            <div class="discord-action">CLICK TO JOIN</div>
+                        </div>
+                        <div class="discord-icon">
+                            <i data-lucide="message-circle"></i>
+                            <span class="member-count">26.124</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation (OttersMP Style) - Below Hero -->
+    <nav class="navbar-otters">
+        <div class="navbar-container">
+            <!-- Left Side: Navigation Links -->
+            <div class="navbar-links-left">
+                <a href="../index.html" class="navbar-link">
+                    <i data-lucide="home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="staff.html" class="navbar-link active">
+                    <i data-lucide="users"></i>
+                    <span>Staff</span>
+                </a>
+                <a href="rules.html" class="navbar-link">
+                    <i data-lucide="book"></i>
+                    <span>Rules</span>
+                </a>
+            </div>
+            
+            <!-- Right Side: Download Button -->
+            <div class="navbar-actions">
+                <button class="download-btn" onclick="window.open('https://craftminersmp.com/CraftMinerLauncher.rar', '_blank')">
+                    <i data-lucide="download"></i>
+                    <span>Download</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content staff-page-content">
+        <div class="container">
+            <div class="staff-page-layout">
+                <!-- Left Sidebar: Staff Application -->
+                <div class="staff-application-sidebar">
+                    <div class="staff-application-card">
+                        <div class="staff-application-header">
+                            <div class="staff-application-icon">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <h3 class="staff-application-title">Staff Application</h3>
+                        </div>
+                        <p class="staff-application-description">
+                            Join our amazing team and help make CraftMiner the best Minecraft server experience! We are looking for dedicated, friendly, and skilled individuals.
+                        </p>
+                        <button class="staff-application-btn" onclick="window.open('https://discord.gg/craftminer', '_blank')">
+                            <i data-lucide="file-text"></i>
+                            <span>Apply Now</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Right Content: Staff Team -->
+                <div class="staff-team-content">
+                    <div class="staff-team-header">
+                        <h2 class="staff-team-title">Our Staff Team</h2>
+                        <p class="staff-team-subtitle">Meet the dedicated people who keep CraftMiner running smoothly</p>
+                    </div>
+                    
+                    <!-- Rank Filter -->
+                    <div class="staff-rank-filters">
+                        <button class="rank-filter-btn active" data-rank="owner">
+                            <i data-lucide="crown"></i>
+                            <span>Owner</span>
+                        </button>
+                        <button class="rank-filter-btn" data-rank="admin">
+                            <i data-lucide="shield-check"></i>
+                            <span>Admin</span>
+                        </button>
+                        <button class="rank-filter-btn" data-rank="mod">
+                            <i data-lucide="shield-alert"></i>
+                            <span>Mods</span>
+                        </button>
+                        <button class="rank-filter-btn" data-rank="helper">
+                            <i data-lucide="hand-heart"></i>
+                            <span>Helpers</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Staff Grid -->
+                    <div class="staff-grid" id="staffGrid">
+                        <!-- Owners -->
+                        <div class="staff-card" data-rank="owner">
+                            <div class="staff-role owner">Owner</div>
+                            <div class="staff-avatar">
+                                <img src="../images/staff-yahuda-full.png" alt="Klew" class="staff-minecraft-avatar" data-staff="klew">
+                            </div>
+                            <div class="staff-name">Klew</div>
+                        </div>
+                        
+                        <div class="staff-card" data-rank="owner">
+                            <div class="staff-role owner">Owner</div>
+                            <div class="staff-avatar">
+                                <img src="../images/staff-latashi-full.png" alt="Latashi" class="staff-minecraft-avatar" data-staff="latashi">
+                            </div>
+                            <div class="staff-name">Latashi</div>
+                        </div>
+                        
+                        <!-- Admin -->
+                        <div class="staff-card" data-rank="admin">
+                            <div class="staff-role admin">Admin</div>
+                            <div class="staff-avatar">
+                                <img src="../images/staff-barkowitch-full.png" alt="Barkowitch" class="staff-minecraft-avatar" data-staff="barkowitch">
+                            </div>
+                            <div class="staff-name">Barkowitch</div>
+                        </div>
+                        
+                        <!-- Mods -->
+                        <div class="staff-card" data-rank="mod">
+                            <div class="staff-role mod">Mod</div>
+                            <div class="staff-avatar">
+                                <img src="../images/staff-ceylan-full.png" alt="Ceylan" class="staff-minecraft-avatar" data-staff="ceylan">
+                            </div>
+                            <div class="staff-name">Ceylan</div>
+                        </div>
+                        
+                        <div class="staff-card" data-rank="mod">
+                            <div class="staff-role mod">Mod</div>
+                            <div class="staff-avatar">
+                                <img src="../images/staff-wtcn-full.png" alt="Wtcn" class="staff-minecraft-avatar" data-staff="wtcn">
+                            </div>
+                            <div class="staff-name">Wtcn</div>
+                        </div>
+                        
+                        <div class="staff-card" data-rank="mod">
+                            <div class="staff-role mod">Mod</div>
+                            <div class="staff-avatar">
+                                <img src="../images/staff-wildrean-full.png" alt="Wildrean" class="staff-minecraft-avatar" data-staff="wildrean">
+                            </div>
+                            <div class="staff-name">Wildrean</div>
+                        </div>
+                        
+                        <!-- Helpers -->
+                        <div class="staff-card" data-rank="helper">
+                            <div class="staff-role helper">Helper</div>
+                            <div class="staff-avatar">
+                                <img src="../images/staff-yahuda-full.png" alt="Yahuda" class="staff-minecraft-avatar" data-staff="yahuda">
+                            </div>
+                            <div class="staff-name">Yahuda</div>
+                        </div>
+                        
+                        <div class="staff-card" data-rank="helper">
+                            <div class="staff-role helper">Helper</div>
+                            <div class="staff-avatar">
+                                <img src="../images/staff-jale-full.png" alt="Jale" class="staff-minecraft-avatar" data-staff="jale">
+                            </div>
+                            <div class="staff-name">Jale</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (OtterSMP Style) -->
+    <footer class="footer-otter">
+        <div class="footer-top">
+            <div class="footer-container">
+                <!-- Brand Section -->
+                <div class="footer-brand">
+                    <div class="footer-avatar">
+                        <img src="../images/footer-logo.avif" alt="CraftMiner" class="brand-avatar">
+                    </div>
+                    <p class="footer-description">
+                        CraftMiner is a Minecraft server that enhances gameplay with new features. Join now if you love Minecraft!
+                    </p>
+                </div>
+                
+                <!-- Links Section -->
+                <div class="footer-links">
+                    <h4 class="footer-links-title">Other Links</h4>
+                    <div class="footer-links-list">
+                        <a href="staff.html" class="footer-link">Staff</a>
+                        <a href="rules.html" class="footer-link">Rules</a>
+                    </div>
+                </div>
+                
+                <!-- Support Section -->
+                <div class="footer-support">
+                    <h4 class="footer-support-title">Support our server</h4>
+                    <p class="footer-support-text">
+                        Support us in delivering higher quality content and gameplay enhancements to the network by purchasing ranks, crate keys, and other packages from our server store. Your contribution makes a difference!
+                    </p>
+                    <a href="https://discord.gg/craftminer" class="footer-store-btn" target="_blank">
+                        <i data-lucide="message-circle"></i>
+                        Join Discord Server
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom-bar">
+            <div class="footer-container">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 CraftMiner. All rights reserved</p>
+                    <p>We are not affiliated with Minecraft or Mojang AB.</p>
+                </div>
+                <div class="footer-social-icons">
+                    <a href="https://discord.gg/craftminer" class="discord-footer-logo" target="_blank">
+                        <img src="../images/discord-logo-final.png" alt="Discord" class="discord-footer-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copy Success Toast -->
+    <div class="toast" id="copyToast">
+        <i data-lucide="check"></i>
+        <span>IP Copied!</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../scripts/main.js"></script>
+    <script>
+        // Staff page specific functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Rank filter functionality
+            const rankFilters = document.querySelectorAll('.rank-filter-btn');
+            const staffCards = document.querySelectorAll('.staff-card');
+            
+            rankFilters.forEach(filter => {
+                filter.addEventListener('click', function() {
+                    // Remove active class from all filters
+                    rankFilters.forEach(f => f.classList.remove('active'));
+                    
+                    // Add active class to clicked filter
+                    this.classList.add('active');
+                    
+                    const selectedRank = this.getAttribute('data-rank');
+                    
+                    // Show/hide staff cards based on selected rank
+                    staffCards.forEach(card => {
+                        const cardRank = card.getAttribute('data-rank');
+                        
+                        if (selectedRank === 'all' || cardRank === selectedRank) {
+                            card.style.display = 'block';
+                            card.style.opacity = '0';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                            }, 50);
+                        } else {
+                            card.style.opacity = '0';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 200);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
